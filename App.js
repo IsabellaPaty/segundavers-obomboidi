@@ -23,10 +23,21 @@ return (
       >
       </Image>
       <View style={styles.menu13}>
-        <TouchableOpacity><Text style={styles.navA13}>Menu</Text></TouchableOpacity>
-        <TouchableOpacity><Text style={styles.navA13}>Reservas</Text></TouchableOpacity>
-        <TouchableOpacity><Text style={styles.navA13}>Localização</Text></TouchableOpacity>
-        <TouchableOpacity><Text style={styles.navA13}>Contato</Text></TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+        <Text style={styles.navItem1}>INICIO</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Contato')}>
+        <Text style={styles.navItem1}>CONTATO</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Reservas')}>
+        <Text style={styles.navItem1}>RESERVA</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Menu')}>
+        <Text style={styles.navItem1}>CARDÁPIO</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Localizacao')}>
+        <Text style={styles.navItem1}>LOCALIZAÇÃO</Text>
+      </TouchableOpacity>
       </View>
     </View>
   </View><View style={styles.about13}>
