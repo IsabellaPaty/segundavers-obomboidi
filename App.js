@@ -12,17 +12,14 @@ const Product = ({ imgSrc, alt, title }) => (
 function HomeScreen({ navigation }) {
 return (
 
-      <><View style={styles.nav13}>
-
+  <ImageBackground
+  source={{ uri: 'https://static.vecteezy.com/ti/vetor-gratis/t2/22208615-ilustracao-do-gradiente-fundo-dentro-vermelho-e-preto-cores-com-hexagonos-vetor.jpg' }}
+  style={styles.backgroundImage13}>
+  <View style={styles.nav13}>
     <Text style={styles.logo13}>CHURRASCARIA BOMBOIDI</Text>
-    <View style={styles.content13}>
-      <Image
-        source={{ uri: 'https://i.pinimg.com/564x/7b/c5/fc/7bc5fcfae007e1dff5fcc854d195059b.jpg' }}
-        style={styles.frenchFries13}
-        resizeMode="cover"
-      >
-      </Image>
-      <View style={styles.menu13}>
+  </View>
+  <View style={styles.content13}>
+    <View style={styles.menu13}>
       <TouchableOpacity onPress={() => navigation.navigate('Home')}>
         <Text style={styles.navItem1}>INICIO</Text>
       </TouchableOpacity>
@@ -38,20 +35,80 @@ return (
       <TouchableOpacity onPress={() => navigation.navigate('Localizacao')}>
         <Text style={styles.navItem1}>LOCALIZAÇÃO</Text>
       </TouchableOpacity>
-      </View>
     </View>
-  </View><View style={styles.about13}>
+    <View style={styles.about13}>
       <Text style={styles.aboutTitle13}>TRADIÇÃO EM CHURRASCO</Text>
-      <Text style={styles.aboutText13}>Na Bomboidi, o churrasco é mais do que uma refeição; é uma celebração da tradição e da arte de cozinhar carne de forma autêntica. Venha desfrutar da tradição em churrasco, onde a arte de grelhar se mistura com a arte de convivência, proporcionando uma experiência única.</Text>
-    </View><Image
-      source={{ uri: 'https://i.pinimg.com/564x/50/71/a8/5071a87d601469a863e56f4c1ea59ac1.jpg' }}
-      style={styles.foto13}
-      resizeMode="cover" /></>
-
+    </View>
+  </View>
+  <Image
+  
+    style={styles.foto13}
+    resizeMode="cover"
+  />
+</ImageBackground>
  );
 }
 const styles = StyleSheet.create({
-    container: {
+    
+  
+  backgroundImage13: {
+    flex: 1,
+    resizeMode: 'cover',
+    justifyContent: 'center',
+  },
+  nav13: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    height: 100,
+    paddingHorizontal: 20,
+  },
+  logo13: {
+    fontSize: 38,
+    color: '#fff',
+    fontWeight: '700',
+    marginLeft: -1100,
+    marginBottom: 20,
+  },
+  content13: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  menu13: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 20,
+    marginTop: -400,
+    marginRight: -900,
+    gap: 10, // Adiciona espaçamento de 10px entre os itens
+},
+  navItem1: {
+    color: '#fff',
+    fontSize: 20,
+    marginHorizontal: 20,
+  },
+  about13: {
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  aboutTitle13: {
+    fontSize: 36,
+    color: '#fff',
+    fontWeight: 'bold',
+    marginBottom: 20,
+    marginLeft: -1100,
+    marginTop: 30,
+  },
+  foto13: {
+    width: '100%',
+    height: 300,
+    resizeMode: 'cover',
+  },
+  
+  container: {
       flex: 1,
       backgroundColor: '#ffffff',
     },
@@ -142,88 +199,7 @@ const styles = StyleSheet.create({
             color: 'white',
             textAlign: 'center',
           },
-          container13: {
-            flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center',
-            padding: 20,
-         },
-         nav13: {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            width: '100%',
-            height: 100,
-            paddingHorizontal: 20,
-         },
-         logo13: {
-            fontSize: 38,
-            color: '#fff',
-            fontWeight: '700',
-            marginRight: 1500,
-            marginTop: 20,
-            alignSelf: 'flex-end',
-            textAlign: 'right',
-         },
-         content13: {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: 300,
-         },
-         frenchFries13: {
-            width: '100%',
-            height: 200, // Especifique uma altura para a imagem de fundo
-            justifyContent: 'center',
-            alignItems: 'center',
-         },
-         menu13: {
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: 30,
-            fontSize: 100,
-            marginRight: -700,
-            marginTop: -600,
-         },
-         navA13: {
-            color: '#fff',
-            textDecorationLine: 'none',
-            fontWeight: '1000',
-         },
-         about13: {
-            color: '#fff',
-            width: '100%',
-            paddingHorizontal: 20,
-            alignItems: 'flex-end',
-            justifyContent: 'flex-end',
-         },
-         aboutTitle13: {
-            fontSize: 36,
-            marginBottom: 550,
-            color: '#fff',
-            marginTop: 50,
-            marginRight: 1300,
-         },
-         aboutText13: {
-         fontSize: 28,
-         color: '#fff',
-         fontWeight: 700,
-         marginTop: -500,
-         lineHeight: 36,
-         margin: 500,
-         marginLeft: 25,
-         alignSelf: 'flex-start',
-         textAlign: 'left',
-         },
-         foto13: {
-            width: '100%',
-            height:800, // Especifique uma altura para a imagem
-            resizeMode: 'cover',
-            marginRight: 0,
-            marginTop: -400,
-         },
+          
           nav1: {
             backgroundColor: '#333',
             flexDirection: 'row',
