@@ -1,0 +1,24 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Cupim",
+      "imgSrc": "https://raw.githubusercontent.com/annecarrero/imagens-bomboidi/main/cupim.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Patinho",
+      "imgSrc": "https://raw.githubusercontent.com/annecarrero/imagens-bomboidi/main/patinho.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Picanha",
+      "imgSrc": "https://raw.githubusercontent.com/annecarrero/imagens-bomboidi/main/picanha.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Pé de Galinha",
+      "imgSrc": "https://raw.githubusercontent.com/annecarrero/imagens-bomboidi/main/pedegalinha.png"
+    }
+  ]
+}
